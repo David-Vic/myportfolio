@@ -1,0 +1,422 @@
+*{
+    margin:0px ;
+    padding:0px ;
+}
+
+body{
+    background-color:rgb(243,238,232);
+    margin: 30px 50px; 
+
+
+}
+
+#home{
+    height: fit-content;
+    width: 100%;
+    
+    
+}
+/*STYLING THE NAVBAR*/
+nav{
+    
+    height: 8vh;
+}
+
+nav h2{
+    display: inline;
+    font-family: Georgia;
+    font-size: 25pt;
+    color: aquamarine;
+}
+
+nav ul{
+    list-style-type:none ;
+    display: inline;
+    position: relative;
+    left: 10%;
+}
+
+nav ul li{
+    display: inline;
+    padding: 5px 10px;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 17pt;
+}
+
+nav div{
+    display: inline;
+    float: right;
+}
+
+nav div button{
+    padding: 10px 30px;
+    background-color: rgb(254, 218, 12);
+    border: none;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+nav div button a{
+    text-decoration: none;
+    color: green;
+    font-size: 15pt;
+}
+/*STYLING THE NAVBAR*/
+
+/*STYLING THE BODY SECTION*/
+#body-container{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+
+}
+.body-item{
+    height: 80vh;
+    width: 45%;
+    
+}
+#body-container .body-item p {
+    font-size: 15pt;
+    font-family: Verdana;
+    font-weight: 600;
+    
+}
+
+#body-container .body-item ul{
+    display: flex;
+    gap: 35px;
+    color: blue;
+}
+
+#body-container .body-item ul li{
+    padding-left: 10px;
+    font-size: 20pt;
+    list-style-type: square;
+}
+
+li::marker{
+    color: rgb(254, 218, 12);
+    font-size: 25pt;
+}
+
+#body-container .body-item .img-container{
+    
+    width:fit-content;
+    height: fit-content;
+    background-color: gold;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left:auto ;
+    margin-right: auto;
+
+}
+#bottom{
+    background-color: black;
+    width:120% ;
+    margin-top: 5vh;
+    margin-left: 0;
+}
+#bottom ul{
+    list-style-type: square;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-left: 0;
+}
+
+#bottom ul li{
+    color: white;
+    font-size: 13pt;
+    font-family: verdana;
+}
+
+/* done with the home content */
+
+#services{
+    width: 100%;
+    height: fit-content;
+    
+}
+
+
+#services .serve{
+    background-color: rgb(254, 218, 12);
+    height: 30px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#services .serve .h2{
+    text-align: center;
+    font-size: 27pt;
+    font-family: verdana;
+    margin-top: 10vh;
+} 
+
+#services h3{
+    text-align: center;
+    font-family: verdana;
+    margin-top: 5vh;
+}
+
+#service-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 5vh;
+}
+
+#service-container .service-item{
+    width: 400px;
+    height: 150px;
+    background-color: rgb( 217, 217, 217);
+    border-radius: 15px;
+}
+
+#service-container .service-item p{
+    display: inline;
+    font-family: verdana;
+    margin-left: 50px;
+    font-size: 15pt; 
+}
+
+#service-container .service-item img{
+    width: 70px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+#services .view{
+    background-color: rgb(254, 218, 12);
+    width: 150px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+#services .view p{
+    font-family: verdana;
+    font-size: 15pt;
+    text-align: center;
+}
+
+/* done with the service content */
+
+#portfolio{
+    height: fit-content;
+    margin: 20px;
+}
+
+#portfolio .port {
+    background-color: rgb(254, 218, 12);
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+}
+
+#portfolio .port h2{
+    text-align: center;
+    font-size: 27pt;
+    font-family: verdana;
+    margin-top: 10vh;
+}
+#portfolio h3{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 17pt;
+}
+
+
+#portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2vh;
+    justify-content: center;
+}
+
+.portfolio-items{
+    width: 209px;
+    border: 10px solid black;
+    border-radius: 16px;
+    height: 400px;
+    justify-content:space-evenly;
+}
+
+.portfolio-items img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: 60px;
+    margin-right: auto;
+    display: block;
+}
+
+.portfolio-items p{
+    display: block;
+    position: relative;
+    top: 5px;
+    margin-top: 2pt;
+    top: 15vh;
+    text-align: justify;
+    font-size: 11pt;
+    color: black;
+}
+
+/* done with the portfolio content */
+
+#testimonials{
+    margin-top: 5vh;
+    width: 100%;
+    height: fit-content;
+}
+
+#testimonials .text{
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 5vh;
+    background-color: rgb(254, 218, 12);
+}
+
+.text h2{
+    text-align: center;
+    font-family: verdana;
+    font-size: 50px;
+}
+
+#testimonials h3{
+    text-align: center;
+    font-family: verdana;
+    margin-top: 30px;
+}
+
+#testimony-container{
+    margin-top: 5vh;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.testimony{
+    width: 300px;
+    height: 500px;
+    padding: 0 10px;
+}
+
+.testimony img{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+#testimony-container .text-testimony{
+    padding-top: 10vh;
+    background-color: rgb( 217, 217, 217);
+    height: 55vh;
+    position: relative;
+    bottom: 4vh;
+    z-index: -1;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.testimony .text-testimony p{
+    font-family: verdana;
+    
+    font-size: 12pt;
+    text-align: justify;
+}
+
+.text-testimony .comment{
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 2.5vh;
+    background-color: rgb(254, 218, 12);
+}
+
+.comment h5{
+    text-align: center;
+    font-family: Geneva;
+    font-size: 25px;
+}
+
+/* done with the testimonial */
+
+#form{
+    background-color: rgb(22, 22, 22);
+}
+.head {
+    height: 20vh;
+}
+.head h1{
+    font-family: verdana;
+    color: rgb(34, 34, 34);
+    font-size: 55pt;
+    text-align: center;
+}
+
+#contact-container{
+    background-color: white;
+    width: 100%;
+    height: 55vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    border-radius: 10px;
+    gap: 5vh;
+}
+
+#contact-text{
+    height: 40vh;
+    width: 45%;
+}
+
+#contact-text h4{
+    color: rgb(192, 155, 110);
+    font-family: verdana;
+    margin-left: 20px;
+     font-size: 14pt;
+     line-height: 7vh;
+    
+}
+
+#contact-text p{
+    color: #fff;
+    font-family: verdana;
+    margin-left: 20px;
+    font-size: 15pt;
+}
